@@ -1,0 +1,131 @@
+.user-auth-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f4f7fb;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* CARD */
+.user-auth-card {
+  width: 100%;
+  max-width: 420px;
+  background: #ffffff;
+  padding: 32px 28px;
+  border-radius: 22px;
+  border: 1px solid #dbe4f0;
+  box-shadow: 0 12px 32px rgba(15, 23, 42, 0.06);
+  text-align: center;
+}
+
+/* TITLE */
+.user-auth-card h2 {
+  margin: 0 0 22px;
+  font-size: 28px;
+  font-weight: 800;
+  color: #0f172a;
+  letter-spacing: -0.4px;
+}
+
+/* INPUT */
+.user-auth-card input {
+  width: 100%;
+  padding: 13px 15px;
+  margin-bottom: 16px;
+  border-radius: 12px;
+  border: 1px solid #dbe4f0;
+  outline: none;
+  font-size: 14px;
+  font-weight: 500;
+  color: #0f172a;
+  background: #ffffff;
+  transition: all 0.22s ease;
+}
+
+.user-auth-card input::placeholder {
+  color: #94a3b8;
+}
+
+.user-auth-card input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.1);
+}
+
+/* BUTTON */
+.user-auth-card button {
+  width: 100%;
+  padding: 13px;
+  background: linear-gradient(135deg, #f97316, #ea580c);
+  color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 700;
+  transition: all 0.24s ease;
+  box-shadow: 0 10px 22px rgba(249, 115, 22, 0.22);
+}
+
+.user-auth-card button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 14px 28px rgba(249, 115, 22, 0.28);
+}
+
+.user-auth-card button:active {
+  transform: translateY(0);
+}
+
+/* TEXT */
+.user-auth-card p {
+  margin-top: 14px;
+  font-size: 14px;
+  color: #64748b;
+}
+
+/* LINK */
+.user-auth-card a {
+  color: #2563eb;
+  font-weight: 700;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.user-auth-card a:hover {
+  text-decoration: underline;
+  color: #1d4ed8;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .user-auth-container {
+    padding: 16px;
+  }
+
+  .user-auth-card {
+    padding: 24px 18px;
+    border-radius: 18px;
+  }
+
+  .user-auth-card h2 {
+    font-size: 22px;
+    margin-bottom: 18px;
+  }
+
+  .user-auth-card input {
+    font-size: 13px;
+    padding: 12px 13px;
+    border-radius: 10px;
+  }
+
+  .user-auth-card button {
+    font-size: 13px;
+    padding: 12px;
+    border-radius: 10px;
+  }
+
+  .user-auth-card p {
+    font-size: 13px;
+  }
+}

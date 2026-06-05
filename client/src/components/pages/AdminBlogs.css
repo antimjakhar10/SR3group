@@ -1,0 +1,202 @@
+/* =========================
+   ADMIN BLOGS PAGE
+========================= */
+
+.admin-blogs-container {
+  padding: 28px;
+}
+
+.admin-blogs-title {
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 22px;
+  color: #1f4f86;
+  line-height: 1.2;
+}
+
+.table-wrapper {
+  background: #ffffff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 18px 36px rgba(15, 23, 42, 0.08);
+  border: 1px solid rgba(31, 79, 134, 0.08);
+}
+
+/* SCROLL SYSTEM */
+.table-scroll {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.table-scroll::-webkit-scrollbar {
+  height: 8px;
+}
+
+.table-scroll::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 999px;
+}
+
+/* TABLE */
+.admin-blogs-table {
+  min-width: 920px;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.admin-blogs-table thead {
+  background: linear-gradient(135deg, #0f172a, #1f4f86);
+  color: white;
+}
+
+.admin-blogs-table th,
+.admin-blogs-table td {
+  padding: 16px 14px;
+  text-align: left;
+  vertical-align: middle !important;
+}
+
+.admin-blogs-table th {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+}
+
+.admin-blogs-table td {
+  font-size: 14px;
+  color: #334155;
+}
+
+.row-flex {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.admin-blogs-table tbody tr {
+  border-bottom: 1px solid #eef2f7;
+  transition: 0.25s ease;
+}
+
+.admin-blogs-table tbody tr:hover {
+  background: #f8fbff;
+}
+
+.admin-blogs-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+/* IMAGE */
+.blog-image {
+  width: 74px;
+  height: 54px;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+  box-shadow: 0 8px 18px rgba(15, 23, 42, 0.08);
+}
+
+/* ACTION BUTTONS */
+.action-buttons {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.edit-btn,
+.delete-btn {
+  border: none;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 700;
+  transition: 0.25s ease;
+}
+
+.edit-btn {
+  background: linear-gradient(135deg, #1f4f86, #2d6aae);
+  box-shadow: 0 10px 20px rgba(31, 79, 134, 0.18);
+}
+
+.edit-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 14px 24px rgba(31, 79, 134, 0.24);
+}
+
+.delete-btn {
+  background: linear-gradient(135deg, #ef4444, #dc2626);
+  box-shadow: 0 10px 20px rgba(239, 68, 68, 0.18);
+}
+
+.delete-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 14px 24px rgba(239, 68, 68, 0.24);
+}
+
+/* STATUS SELECT */
+.status-select {
+  padding: 7px 12px;
+  border: none;
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: 700;
+  color: white;
+  cursor: pointer;
+  min-width: 115px;
+  height: 34px;
+  outline: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* COLORS */
+.status-select.approved {
+  background: linear-gradient(135deg, #16a34a, #15803d);
+}
+
+.status-select.pending {
+  background: linear-gradient(135deg, #f59e0b, #d97706);
+}
+
+.status-select.rejected {
+  background: linear-gradient(135deg, #ef4444, #dc2626);
+}
+
+.status-select:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(244, 124, 32, 0.12);
+}
+
+.status-select option {
+  color: #111827;
+  background: #ffffff;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .admin-blogs-container {
+    padding: 18px 14px;
+  }
+
+  .admin-blogs-title {
+    font-size: 24px;
+    margin-bottom: 18px;
+  }
+
+  .admin-blogs-table th,
+  .admin-blogs-table td {
+    padding: 14px 12px;
+  }
+
+  .edit-btn,
+  .delete-btn {
+    padding: 7px 12px;
+    font-size: 12px;
+  }
+}

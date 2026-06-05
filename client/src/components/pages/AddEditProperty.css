@@ -1,0 +1,351 @@
+/* =========================
+   FORM WRAPPER
+========================= */
+.add-property-form {
+  padding: 30px 20px;
+  background: #f1f5f9;
+}
+
+/* TITLE */
+.form-title {
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 25px;
+}
+
+/* CONTAINER */
+.form-container {
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+/* GRID LAYOUT */
+.form-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 25px;
+  align-items: stretch;
+}
+
+/* =========================
+   CARD STYLE
+========================= */
+.form-card {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e2e8f0;
+  margin-bottom: 25px;
+}
+
+.card-title {
+  margin-bottom: 18px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* =========================
+   INPUTS
+========================= */
+.form-group {
+  margin-bottom: 16px;
+}
+
+.form-group label,
+.row label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #334155;
+}
+
+.add-property-form input,
+.add-property-form select,
+.add-property-form textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  font-size: 14px;
+  margin-top: 6px;
+  outline: none;
+  transition: 0.2s ease;
+  background: #fff;
+}
+
+.add-property-form input:focus,
+.add-property-form select:focus,
+.add-property-form textarea:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.1);
+}
+
+/* ROW LAYOUT */
+.row {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.col {
+  flex: 1;
+}
+
+
+
+/* =========================
+   UPLOAD BOX
+========================= */
+.upload-box {
+  border: 2px dashed #cbd5e1;
+  border-radius: 12px;
+  padding: 25px;
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: 18px;
+  background: #f8fafc;
+  transition: 0.2s;
+}
+
+.upload-box:hover {
+  background: #eef2ff;
+  border-color: #2563eb;
+}
+
+.preview-img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.upload-text {
+  font-weight: 600;
+  color: #334155;
+}
+
+.upload-subtext {
+  font-size: 12px;
+  color: #94a3b8;
+}
+
+/* =========================
+   CHECKBOX GRID
+========================= */
+.checkbox-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  font-size: 14px;
+}
+
+/* =========================
+   ADD ROW
+========================= */
+.add-row {
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px;
+  margin-top: 15px;
+  flex-wrap: nowrap !important;
+  width: 100%;
+}
+
+.add-row input {
+  flex: 1 !important;
+  width: auto !important;
+  min-width: 0 !important;
+}
+
+.add-row button {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+
+  width: auto;
+  white-space: nowrap;
+
+   background: linear-gradient(135deg, #1f4f86, #2d6aae) !important;
+  color: #fff !important;
+  border: none !important;
+
+  padding: 6px 12px;       
+  border-radius: 6px;
+
+  font-size: 12px;         
+  font-weight: 500;
+
+  height: 38px;             
+  min-height: unset;        
+
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.add-row button:hover {
+  background: linear-gradient(135deg, #1a3f6e, #254f8a) !important;
+}
+
+.checkbox-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px 30px;   /* vertical 14px, horizontal 30px */
+}
+
+.checkbox-grid label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.checkbox-grid input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  margin: 0;
+}
+
+/* =========================
+   NEARBY SECTION
+========================= */
+.nearby-section {
+  margin-top: 25px;
+  padding-top: 18px;
+  border-top: 1px solid #e2e8f0;
+}
+
+/* =========================
+   SUBMIT BUTTON
+========================= */
+.submit-row {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.submit-btn {
+  background: #10b981;
+  color: white;
+  padding: 10px 28px;   /* chota */
+  border-radius: 8px;
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 6px 16px rgba(16, 185, 129, 0.25);
+  min-width: 160px;   /* fixed width */
+  width: auto;        /* IMPORTANT */
+}
+.submit-btn:hover {
+  background: #059669;
+}
+
+.submit-card {
+  text-align: center;
+  margin-bottom: 0;   /* 🔥 remove extra gap */
+  padding: 18px 25px;
+}
+
+.full-submit {
+  width: 100%;
+  height: 55px;
+  font-size: 16px;
+  background: linear-gradient(135deg, #f47c20, #de6c15) !important;
+  color: #fff !important;
+  
+}
+
+.full-submit:hover {
+  background: linear-gradient(135deg, #de6c15, #c75f10) !important;
+}
+
+.right-column {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  height: 100%;  
+}
+
+.right-column .form-card:first-child {
+  flex: 1;   /* 🔥 main content stretch hoga */
+}
+.right-column .form-card {
+  margin-bottom: 0 ;   /* 25 se kam */
+}
+
+.right-column .submit-card {
+  margin-top: 0;         /* extra space remove */
+}
+
+.quill-editor-wrapper {
+  background: #fff;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 6px;
+}
+
+.quill-editor-wrapper .ql-toolbar {
+  border: none;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.quill-editor-wrapper .ql-container {
+  border: none;
+  min-height: 220px;
+  font-size: 14px;
+}
+
+.quill-editor-wrapper .ql-editor {
+  min-height: 180px;
+}
+
+.toggle-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 12px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #334155;
+  cursor: pointer;
+}
+
+.toggle-label input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  margin: 0;
+}
+
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 992px) {
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .add-property-form {
+    padding: 20px 12px;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .submit-row {
+    justify-content: center;
+  }
+
+  .submit-btn {
+    width: 100%;
+    max-width: 320px;
+  }
+}

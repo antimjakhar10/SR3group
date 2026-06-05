@@ -1,0 +1,154 @@
+.testimonials-section {
+  font-family: "Roboto", sans-serif;
+  padding: 70px 20px 90px;
+  background: linear-gradient(180deg, #f8fbff 0%, #fffaf6 100%);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.testimonials-section .container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.testimonial-header {
+  margin-bottom: 50px;
+}
+
+.subtitle-red {
+  color: #f47c20;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1.1px;
+  text-transform: uppercase;
+}
+
+.subtitle-red span {
+  color: #f47c20;
+  margin: 0 5px;
+  font-weight: 700;
+}
+
+.main-heading {
+  font-size: 2rem;
+  color: #1f4f86;
+  font-weight: 700;
+  margin-top: 15px;
+  line-height: 1.25;
+}
+
+.testimonial-swiper {
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+
+.testimonial-card {
+  background: #ffffff;
+  padding: 25px 20px 35px 20px;
+  border-radius: 24px;
+  box-shadow: 0 16px 36px rgba(15, 23, 42, 0.1);
+  border: 1px solid rgba(31, 79, 134, 0.08);
+  max-width: 100%;
+  min-height: 330px;
+  position: relative;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  margin-top: 42px;
+}
+
+.testimonial-card:hover {
+  box-shadow: 0 24px 46px rgba(15, 23, 42, 0.14);
+  border-color: rgba(244, 124, 32, 0.2);
+}
+
+.client-img-circle {
+  width: 84px;
+  height: 84px;
+  margin: 0 auto;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid #1f4f86;
+  position: absolute;
+  top: -42px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  box-shadow: 0 10px 24px rgba(31, 79, 134, 0.16);
+}
+
+.client-img-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.testimonial-rating {
+  display: flex;
+  justify-content: center;
+  margin-top: 54px;
+  gap: 3px;
+}
+
+.quote-text {
+  font-size: 0.95rem;
+  color: #4b5563;
+  line-height: 1.7;
+  margin: 15px 0 12px 0;
+  min-height: 110px;
+}
+
+.client-name {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #1f4f86;
+  margin-bottom: 4px;
+}
+
+.client-role {
+  font-size: 0.85rem;
+  color: #6b7280;
+  font-style: italic;
+}
+
+.testimonial-swiper .swiper-pagination-bullet {
+  background: #cbd5e1;
+  opacity: 1;
+}
+
+.testimonial-swiper .swiper-pagination-bullet-active {
+  background: #f47c20;
+}
+
+@media (max-width: 768px) {
+  .testimonials-section {
+    padding: 60px 16px 85px;
+  }
+
+  .main-heading {
+    font-size: 1.7rem;
+  }
+
+  .testimonial-card {
+    min-height: auto;
+  }
+
+  .quote-text {
+    min-height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-heading {
+    font-size: 1.45rem;
+  }
+
+  .quote-text {
+    font-size: 0.92rem;
+  }
+
+  .client-img-circle {
+    width: 78px;
+    height: 78px;
+    top: -39px;
+  }
+}

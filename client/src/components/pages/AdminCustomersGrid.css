@@ -1,0 +1,52 @@
+.admin-customers-grid-wrapper {
+  padding: 22px 26px;
+}
+
+/* ===== HEADER ===== */
+.admin-customers-grid-header {
+  margin-bottom: 22px;
+}
+
+.admin-customers-grid-header h2 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #1e3a5f; /* 🔵 brand blue */
+  margin-bottom: 4px;
+}
+
+.admin-customers-grid-header p {
+  color: #64748b;
+  font-size: 14px;
+}
+
+/* ===== CARD CONTAINER ===== */
+.admin-customers-grid-card {
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  padding: 22px;
+
+  /* subtle border for premium feel */
+  border: 1px solid #f1f5f9;
+}
+
+/* Optional hover feel (very subtle) */
+.admin-customers-grid-card:hover {
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+  transition: 0.3s ease;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .admin-customers-grid-wrapper {
+    padding: 16px;
+  }
+
+  .admin-customers-grid-header h2 {
+    font-size: 18px;
+  }
+
+  .admin-customers-grid-card {
+    padding: 16px;
+  }
+}

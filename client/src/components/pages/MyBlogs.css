@@ -1,0 +1,183 @@
+.myblogs-container {
+  padding: 24px;
+  background: #f4f7fb;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.myblogs-title {
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 18px;
+  color: #0f172a;
+  letter-spacing: -0.4px;
+}
+
+/* WRAPPER */
+.myblogs-table-wrapper {
+  background: #ffffff;
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid #dbe4f0;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+  width: 100%;
+}
+
+/* SCROLL */
+.table-scroll {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* TABLE */
+.myblogs-table {
+  width: 100%;
+  min-width: 650px;
+  border-collapse: collapse;
+}
+
+/* HEADER */
+.myblogs-table thead {
+  background: #0f172a;
+}
+
+.myblogs-table th {
+  padding: 16px 18px;
+  color: #ffffff;
+  text-align: left;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* BODY */
+.myblogs-table td {
+  padding: 16px 18px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #334155;
+  border-bottom: 1px solid #e2e8f0;
+  vertical-align: middle;
+}
+
+.myblogs-table tbody tr:hover {
+  background: #f8fbff;
+}
+
+/* IMAGE */
+.blog-image {
+  width: 85px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+}
+
+/* TITLE */
+.blog-title {
+  font-weight: 600;
+  color: #0f172a;
+}
+
+/* STATUS */
+.status-badge {
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.status-badge.pending {
+  background: linear-gradient(135deg, #facc15, #f59e0b);
+}
+
+.status-badge.approved {
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+}
+
+.status-badge.rejected {
+  background: linear-gradient(135deg, #ef4444, #dc2626);
+}
+
+/* ACTION COLUMN CENTER */
+.myblogs-table td:last-child,
+.myblogs-table th:last-child {
+  text-align: center;
+}
+
+/* ACTION BUTTONS FIX */
+.action-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+/* COMMON BUTTON */
+.edit-btn,
+.view-btn {
+  /* min-width: 90px; */
+  height: 36px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+  transition: 0.25s;
+}
+
+/* EDIT */
+.edit-btn {
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: #fff;
+}
+
+/* VIEW */
+.view-btn {
+  background: linear-gradient(135deg, #f97316, #ea580c);
+  color: #fff;
+}
+
+/* HOVER */
+.edit-btn:hover,
+.view-btn:hover {
+  transform: translateY(-1px);
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .myblogs-container {
+    padding: 16px;
+  }
+
+  .myblogs-title {
+    font-size: 22px;
+  }
+
+  .myblogs-table {
+    min-width: 600px;
+  }
+
+  .myblogs-table th,
+  .myblogs-table td {
+    padding: 12px;
+    font-size: 12px;
+  }
+
+  .blog-image {
+    width: 70px;
+    height: 50px;
+  }
+
+  .edit-btn,
+  .view-btn {
+    /* min-width: 80px; */
+    height: 32px;
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,168 @@
+.admin-users-container {
+  padding: 24px;
+  background: #f4f7fb;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.admin-users-container h2 {
+  margin: 0 0 18px;
+  font-size: 28px;
+  font-weight: 800;
+  color: #0f172a;
+  letter-spacing: -0.4px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* WRAPPER */
+.table-wrapper {
+  width: 100%;
+  overflow: hidden;
+  background: #ffffff;
+  border: 1px solid #dbe4f0;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+}
+
+/* SCROLL */
+.table-scroll {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.table-scroll::-webkit-scrollbar {
+  height: 8px;
+}
+
+.table-scroll::-webkit-scrollbar-track {
+  background: #e2e8f0;
+  border-radius: 999px;
+}
+
+.table-scroll::-webkit-scrollbar-thumb {
+  background: #2563eb;
+  border-radius: 999px;
+}
+
+/* TABLE */
+.users-table {
+  width: 100%;
+  min-width: 650px;
+  border-collapse: collapse;
+  background: #ffffff;
+}
+
+/* HEADER */
+.users-table thead tr {
+  background: #0f172a;
+}
+
+.users-table th {
+  padding: 16px 18px;
+  color: #ffffff;
+  text-align: left;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  white-space: nowrap;
+}
+
+/* BODY */
+.users-table td {
+  padding: 16px 18px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #334155;
+  border-bottom: 1px solid #e2e8f0;
+  vertical-align: middle;
+}
+
+.users-table tbody tr {
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.users-table tbody tr:hover {
+  background: #f8fbff;
+}
+
+/* role styling feel */
+.users-table td:nth-child(3) {
+  font-weight: 700;
+  color: #1d4ed8;
+}
+
+/* ACTION BUTTON */
+.admin-users-container .delete-btn {
+  border: none;
+  outline: none;
+  background: linear-gradient(135deg, #f97316, #ea580c);
+  color: #ffffff;
+
+  padding: 8px 14px;
+  min-width: 90px;          /* 👈 FIX: proper width */
+  text-align: center;
+
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+
+  display: inline-flex;     /* 👈 FIX: text center */
+  align-items: center;
+  justify-content: center;
+
+  white-space: nowrap;      /* 👈 FIX: break na ho */
+  transition: all 0.25s ease;
+
+  box-shadow: 0 8px 18px rgba(249, 115, 22, 0.22);
+}
+.delete-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 12px 24px rgba(249, 115, 22, 0.28);
+  background: linear-gradient(135deg, #ea580c, #c2410c);
+}
+
+.delete-btn:active {
+  transform: translateY(0);
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .admin-users-container {
+    padding: 16px;
+  }
+
+  .admin-users-container h2 {
+    font-size: 22px;
+    margin-bottom: 14px;
+  }
+
+  .table-wrapper {
+    border-radius: 14px;
+  }
+
+  .users-table {
+    min-width: 600px;
+  }
+
+  .users-table th {
+    padding: 13px 14px;
+    font-size: 11px;
+  }
+
+  .users-table td {
+    padding: 13px 14px;
+    font-size: 12px;
+  }
+
+  .delete-btn {
+    padding: 8px 12px;
+    font-size: 12px;
+    border-radius: 8px;
+  }
+}

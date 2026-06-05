@@ -1,0 +1,72 @@
+.View360-wrapper {
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+}
+
+.View360-header {
+  margin-bottom: 40px;
+}
+
+.View360-title {
+  color: #ffffff;
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.View360-container {
+  max-width: 100%;
+  height: 500px;
+  margin: 0 auto;
+  border: 10px solid rgba(255, 255, 255, 0.1);
+  border-radius: 24px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.6);
+}
+
+#panorama-viewer {
+  width: 100%;
+  height: 550px; /* Aap height yahan se adjust kar sakte ho */
+  background: #000;
+}
+
+.View360-badge {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  background: #1b7f2a;
+  color: white;
+  padding: 10px 22px;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 14px;
+  z-index: 10;
+  box-shadow: 0 8px 20px rgba(255, 77, 68, 0.4);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Red Hotspot customization */
+.pnlm-hotspot-base.info {
+  background: #1b7f2a !important;
+  border: 2px solid #ffffff !important;
+  width: 26px !important;
+  height: 26px !important;
+  border-radius: 50% !important;
+  cursor: pointer;
+}
+
+/* Responsiveness for Mobile */
+@media (max-width: 768px) {
+  #panorama-viewer {
+    height: 350px;
+  }
+  .View360-title {
+    font-size: 24px;
+  }
+  .View360-container {
+    margin: 0 15px;
+  }
+}
