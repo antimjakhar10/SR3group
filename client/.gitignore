@@ -12,7 +12,6 @@ dist
 dist-ssr
 *.local
 *.zip
-.env
 upload
 
 # Editor directories and files
